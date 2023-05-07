@@ -1,0 +1,83 @@
+body{
+    background-color: hsl(222, 26%, 31%);
+    font-family: League Spartan;
+}
+.attribution{
+  text-align: center;
+  margin-top:10px
+}
+.attribution a{
+  color: wheat;
+}
+.mainDiv{
+    width: 435px;
+    margin: 80px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.js-out{
+    font-size: 60px;
+    border-radius: 10px;
+    text-align: end;
+    padding: 30px 20px 30px 10px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 36%, 15%);
+}
+.allButtons {
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: hsl(223, 31%, 20%);
+    padding: 20px;
+    display: grid;
+   grid-template-columns: 80px 80px 80px 80px;
+   grid-template-rows: 50px 50px 50px 50px 50px;
+   column-gap: 25px;
+   row-gap: 25px;
+  }
+  .oneButton{
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-family: League Spartan;
+    font-size: 26px;
+    color: hsl(221, 14%, 31%);
+    background-color: hsl(30, 25%, 89%);
+    border: 0px;
+    box-shadow: 0px 2px 3px 0px hsl(28, 16%, 65%)
+  }
+  .oneButton:active {
+    animation-duration: 0.1s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    0% {
+      margin-top: 0%;
+    }
+    50% {
+        margin-top: 5%;
+        box-shadow: none;
+      }
+    100% {
+      margin-top: 0%;
+    }
+  }
+  .reset{
+    font-weight: 700;
+    font-size: 20px;
+    color: aliceblue;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 0px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background: hsl(6, 63%, 50%);
+    box-shadow: 0px 2px 3px 0px hsl(6, 70%, 34%);
+  }
+  .reset:active {
+    animation-duration: 0.1s;
+    animation-name: slidein;
+  }
+
+  
