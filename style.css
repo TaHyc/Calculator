@@ -16,6 +16,7 @@ body{
     flex-direction: column;
 }
 .js-out{
+    overflow: auto;
     font-size: 60px;
     border-radius: 10px;
     text-align: end;
@@ -79,5 +80,59 @@ body{
     animation-duration: 0.1s;
     animation-name: slidein;
   }
+  @media only screen and (min-width: 380px) and (max-width: 450px){
+    .mainDiv{
+      width: 100%;
+      margin: 30px auto 0 auto;
+      display: flex;
+      flex-direction: column;
+  }
+  .js-out{
+    font-size: 60px;
+    border-radius: 10px;
+    text-align: end;
+    padding: 20px 20px 20px 10px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 36%, 15%);
+}
+    .allButtons {
+      margin-top: 20px;
+      border-radius: 10px;
+      background-color: hsl(223, 31%, 20%);
+      padding: 10px;
+     grid-template-columns: 20% 20% 20% 20%;
+     column-gap: 25px;
+     row-gap: 25px;
+
+    }
+    .oneButton{
+      text-align: center;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 10px;
+      font-family: League Spartan;
+      font-size: 26px;
+      color: hsl(221, 14%, 31%);
+      background-color: hsl(30, 25%, 89%);
+      border: 0px;
+      box-shadow: 0px 2px 3px 0px hsl(28, 16%, 65%)
+    }
+    .attribution{
+      margin: 20px auto 20px auto;
+    }
+    }
+    @media only screen and (min-width: 300px) and (max-width: 379px){
+      .allButtons {
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: hsl(223, 31%, 20%);
+        padding: 10px;
+       grid-template-columns: 20.5% 20.5% 20.5% 20.5%;
+      }
+      .attribution{
+        text-align: center;
+        margin: 20px 0 20px 100px;
+      }
+    }
 
   
